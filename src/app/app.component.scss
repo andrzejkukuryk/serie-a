@@ -1,0 +1,17 @@
+@import "../../variables.scss";
+
+@mixin header {
+  color: $color-primary;
+  font-family: $font-primary;
+  text-align: center;
+}
+
+h1 {
+  @include header;
+  font-size: 90px;
+  margin-bottom: 30px
+}
+h2 {
+  @include header;
+  font-size: 36px;
+}
