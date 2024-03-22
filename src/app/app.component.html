@@ -2,6 +2,5 @@
 <h2>2023/24</h2>
 <app-flag></app-flag>
 <div class="clubsContainer">
-    <app-club [club]="clubs[0]"></app-club>
-    <app-club [club]="clubs[1]"></app-club>
+    <app-club *ngFor="let club of clubs" [club]="club"></app-club>
 </div>

@@ -1,0 +1,64 @@
+@import "../../../variables.scss";
+.mock {
+    width: 8vw;
+    height: 10vw;
+}
+
+.clubContainer {
+    background-color: rgba($color: $color-secondary, $alpha: .1);
+    border: 2px solid rgba($color: $color-primary, $alpha: 0);
+    border-radius: 1vw;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: all .2s;
+
+    cursor: pointer;
+
+    .logo{
+        width: 6vw;
+        height: auto;
+        padding: 2vw 1vw;
+        transition: all .2s;
+    }
+}
+
+.clubContainer:hover{
+    background-color: rgba($color: $color-secondary, $alpha: .3);
+    border: 2px solid $color-primary;
+
+    .logo{
+        width: 6.4vw;
+        padding: 1.8vw .8vw;
+    }
+}
+
+
+// .expanded {
+//     position: absolute;
+//     z-index: 2;
+//     top: 0;
+//     left: 25vw;
+//     background-color: rgba($color: $color-secondary, $alpha: .98);
+//     border: 2px solid $color-primary;
+    
+
+//         .logo {
+//             width: 24vw;
+//             padding: 2vw 25vw 2vw 1vw;
+//         }
+// }
+
+// .expanded:hover {
+//     position: absolute;
+//     z-index: 2;
+//     top: 0;
+//     left: 25vw;
+//     background-color: rgba($color: $color-secondary, $alpha: .98);
+//     border: 2px solid $color-primary;
+//     cursor: default;
+//         .logo {
+//             width: 24vw;
+//             padding: 2vw 25vw 2vw 1vw;
+//         }
+// }

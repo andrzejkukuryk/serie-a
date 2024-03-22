@@ -1,3 +1,4 @@
-<div *ngIf="club" class="clubThumbnail">
-    <img src="{{club.logo}}" />
+<div *ngIf="expanded" class="mock" #mock></div>
+<div *ngIf="club" [ngClass]="{'clubContainer': true, 'expanded': expanded}" #clubContainer (click)="handleClick()">
+    <img src="{{club.logo}}" class="logo" />
 </div>
