@@ -34,31 +34,31 @@
 }
 
 
-// .expanded {
-//     position: absolute;
-//     z-index: 2;
-//     top: 0;
-//     left: 25vw;
-//     background-color: rgba($color: $color-secondary, $alpha: .98);
-//     border: 2px solid $color-primary;
+.expanded {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 25vw;
+    background-color: rgba($color: $color-secondary, $alpha: .98);
+    border: 2px solid $color-primary;
     
 
-//         .logo {
-//             width: 24vw;
-//             padding: 2vw 25vw 2vw 1vw;
-//         }
-// }
+        .logo {
+            width: 24vw;
+            padding: 2vw 25vw 2vw 1vw;
+        }
+}
 
-// .expanded:hover {
-//     position: absolute;
-//     z-index: 2;
-//     top: 0;
-//     left: 25vw;
-//     background-color: rgba($color: $color-secondary, $alpha: .98);
-//     border: 2px solid $color-primary;
-//     cursor: default;
-//         .logo {
-//             width: 24vw;
-//             padding: 2vw 25vw 2vw 1vw;
-//         }
-// }
+.expanded:hover {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 25vw;
+    background-color: rgba($color: $color-secondary, $alpha: .98);
+    border: 2px solid $color-primary;
+    cursor: default;
+        .logo {
+            width: 24vw;
+            padding: 2vw 25vw 2vw 1vw;
+        }
+}

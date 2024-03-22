@@ -29,9 +29,9 @@ export class ClubComponent {
     // debugger;
     console.log(rect.left, top);
 
-    this.renderer.setStyle(container, 'position', 'absolute');
-    this.renderer.setStyle(container, 'left', `${left}px`);
-    this.renderer.setStyle(container, 'top', `${top}px`);
+    // this.renderer.setStyle(container, 'position', 'absolute');
+    // this.renderer.setStyle(container, 'left', `${left}px`);
+    // this.renderer.setStyle(container, 'top', `${top}px`);
 
     console.log(rect);
   }
