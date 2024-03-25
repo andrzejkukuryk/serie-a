@@ -15,3 +15,15 @@ h2 {
   @include header;
   font-size: 36px;
 }
+
+.clubsContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1vw;
+
+  margin: 3vw 1vw;
+}

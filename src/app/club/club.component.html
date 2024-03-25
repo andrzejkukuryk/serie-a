@@ -1,0 +1,6 @@
+<div *ngIf="isExpanded" class="mock" #mock></div>
+<div *ngIf="club" [ngClass]="{'clubContainer': true, 'expanded': isExpanded}" >
+    <button *ngIf="isExpanded" type="button" class="closeButton" (click)="closeDetails()"><img src="../../assets/close.svg" class="close" /></button>
+    <img src="{{club.logo}}" [ngClass]="{'logo': true, 'noSpace': showDetails}" (click)="handleClick()"/>
+    <app-details *ngIf="showDetails" [club]="club" ></app-details>
+</div>
