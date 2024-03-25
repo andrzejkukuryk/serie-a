@@ -1,6 +1,6 @@
-<p>Name: {{club.name | uppercase}}</p>
-<p>City: {{club.city}}</p>
-<div class="colors">Colors: 
+<p><span class="label">Name: </span>{{club.name | uppercase}}</p>
+<p><span class="label">City: </span>{{club.city}}</p>
+<div class="colors"><span class="label">Colors: </span> 
     <div *ngFor="let color of club.colors" [ngStyle]="{'background-color': color}" class="clubColor"></div>
 </div>
-<p>Season goal: {{club.seasonGoal}}</p>
+<p><span class="label">Season goal: </span>{{club.seasonGoal}}</p>

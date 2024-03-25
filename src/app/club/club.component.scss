@@ -18,7 +18,6 @@
     top: 0;
     left: 0;
     z-index: 1;
-    // transition: all .2s;
 
     cursor: pointer;
 
@@ -33,7 +32,6 @@
         .close {
             width: 32px;
             height: 32px;
-            fill: red;
         }
 
     }
@@ -42,7 +40,6 @@
         width: 6vw;
         height: auto;
         padding: 2vw 1vw;
-        transition: all .2s;
     }
 }
 

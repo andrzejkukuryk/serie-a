@@ -19,17 +19,10 @@ export class ClubComponent {
 
   handleClick(): void {
     this.isExpanded = true;
-
-    setTimeout(() => {
-      this.showDetails = true;
-    }, 200);
+    this.showDetails = true;
   }
   closeDetails(): void {
-    // this.hide();
-    this.isExpanded = false;
-  }
-
-  collapse(): void {
+    this.showDetails = false;
     this.isExpanded = false;
   }
 }
