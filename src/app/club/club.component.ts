@@ -14,30 +14,22 @@ import { Club } from '../../models/club';
 })
 export class ClubComponent {
   @Input() club?: Club;
-  public expanded = false;
-
-  @ViewChild('clubContainer') clubContainer!: ElementRef;
-
-  constructor(private renderer: Renderer2) {}
-
-  setPositionAbsolute() {
-    const container = this.clubContainer.nativeElement;
-
-    const rect = container.getBoundingClientRect();
-    const left = rect.left;
-    const top = rect.top;
-    // debugger;
-    console.log(rect.left, top);
-
-    // this.renderer.setStyle(container, 'position', 'absolute');
-    // this.renderer.setStyle(container, 'left', `${left}px`);
-    // this.renderer.setStyle(container, 'top', `${top}px`);
-
-    console.log(rect);
-  }
+  public isExpanded = false;
+  public showDetails = false;
 
   handleClick(): void {
-    this.setPositionAbsolute();
-    this.expanded = true;
+    this.isExpanded = true;
+
+    setTimeout(() => {
+      this.showDetails = true;
+    }, 200);
+  }
+  closeDetails(): void {
+    // this.hide();
+    this.isExpanded = false;
+  }
+
+  collapse(): void {
+    this.isExpanded = false;
   }
 }

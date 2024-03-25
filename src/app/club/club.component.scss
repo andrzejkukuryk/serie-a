@@ -2,18 +2,41 @@
 .mock {
     width: 8vw;
     height: 10vw;
+    border: 2px solid rgba($color: $color-primary, $alpha: 0);
 }
 
 .clubContainer {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
     background-color: rgba($color: $color-secondary, $alpha: .1);
     border: 2px solid rgba($color: $color-primary, $alpha: 0);
     border-radius: 1vw;
     position: relative;
     top: 0;
     left: 0;
-    transition: all .2s;
+    z-index: 1;
+    // transition: all .2s;
 
     cursor: pointer;
+
+    .closeButton {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        .close {
+            width: 32px;
+            height: 32px;
+            fill: red;
+        }
+
+    }
 
     .logo{
         width: 6vw;
@@ -37,9 +60,10 @@
 .expanded {
     position: absolute;
     z-index: 2;
-    top: 0;
-    left: 25vw;
-    background-color: rgba($color: $color-secondary, $alpha: .98);
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba($color: $color-secondary, $alpha: .97);
     border: 2px solid $color-primary;
     
 
@@ -47,18 +71,24 @@
             width: 24vw;
             padding: 2vw 25vw 2vw 1vw;
         }
+
+        .noSpace {
+            padding: 2vw 4vw 2vw 1vw;
+        }
 }
 
 .expanded:hover {
     position: absolute;
     z-index: 2;
-    top: 0;
-    left: 25vw;
     background-color: rgba($color: $color-secondary, $alpha: .98);
     border: 2px solid $color-primary;
     cursor: default;
         .logo {
             width: 24vw;
             padding: 2vw 25vw 2vw 1vw;
+        }
+
+        .noSpace {
+            padding: 2vw 4vw 2vw 1vw;
         }
 }
