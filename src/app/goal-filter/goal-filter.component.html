@@ -1,0 +1,8 @@
+<form #goalForm="ngForm">
+    <div class="form-group">
+        <label for="goal">Season goal</label>
+        <select #selectGoal class="form-control" id="goal" (change)="this.clubService.filter(selectGoal.value)">
+            <option *ngFor="let goal of seasonGoals" [value]="goal">{{goal}}</option>
+        </select>
+    </div>
+</form>
