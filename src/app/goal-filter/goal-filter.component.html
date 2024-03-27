@@ -1,15 +1,17 @@
 <form>
+    Show: 
     <div>
-      <label>
+      <label  [ngClass]="{'checked': selectedFilter === 'all'}">
         <input type="radio" name="seasonGoal" value="all" [(ngModel)]="selectedFilter" (ngModelChange)="this.filterClubs()"> All clubs
       </label>
     </div>
     <div>
-      <label>
+      <label  [ngClass]="{'checked': selectedFilter !== 'all'}">
         <input type="radio" name="seasonGoal" [value]="selectedGoal" [(ngModel)]="selectedFilter" (ngModelChange)="this.filterClubs()"> Season goal:
-      </label>
+      
       <select [(ngModel)]="selectedGoal" name="goal" (ngModelChange)="setFilter($event)">
         <option *ngFor="let goal of seasonGoals" [value]="goal">{{goal}}</option>
       </select>
+      </label>
     </div>
   </form>

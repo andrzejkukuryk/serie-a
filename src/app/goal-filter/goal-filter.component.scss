@@ -1,0 +1,48 @@
+@import "../../../variables.scss";
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-primary;
+    color: $color-primary;
+    font-size: 24px;
+}
+input {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgba($color: $color-secondary, $alpha: .1);
+    border: 2px solid rgba($color: $color-primary, $alpha: 0);
+    border-radius: 1vw;
+    cursor: pointer;
+    transition: background-color .2s, border .2s;
+}
+
+label:hover {
+    background-color: rgba($color: $color-secondary, $alpha: .2);
+    border: 2px solid rgba($color: $color-primary, $alpha: .2);
+}
+
+.checked {
+    background-color: rgba($color: $color-secondary, $alpha: .3);
+    border: 2px solid rgba($color: $color-primary, $alpha: 1);
+}
+
+select {
+    background-color: $color-secondary;
+    height: 32px;
+    border: 2px solid rgba($color: $color-primary, $alpha: .2);
+    border-radius: 4px;
+    margin-left: 6px;
+    color: $color-primary;
+    font-family: $font-primary;
+    font-size: 20px;
+    outline: none;
+}
+
+
