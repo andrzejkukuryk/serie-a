@@ -6,19 +6,20 @@ import { AppComponent } from './app.component';
 import { FlagComponent } from './flag/flag.component';
 import { ClubComponent } from './club/club.component';
 import { DetailsComponent } from './details/details.component';
+import { GoalFilterComponent } from './goal-filter/goal-filter.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     FlagComponent,
     ClubComponent,
-    DetailsComponent
+    DetailsComponent,
+    GoalFilterComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, CommonModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

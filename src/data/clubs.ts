@@ -3,6 +3,7 @@ import { Club } from '../models/club';
 
 export const clubs: Club[] = [
   {
+    id: 'ata',
     name: 'Atalanta BC',
     logo: '../assets/atalanta.png',
     city: 'Bergamo',
@@ -10,6 +11,7 @@ export const clubs: Club[] = [
     seasonGoal: 'qualify for European competitions',
   },
   {
+    id: 'bol',
     name: 'Bologna FC 1909',
     logo: '../assets/bologna.png',
     city: 'Bologna',
@@ -17,6 +19,7 @@ export const clubs: Club[] = [
     seasonGoal: 'place in the middle of the table',
   },
   {
+    id: 'cal',
     name: 'Cagliari Calcio',
     logo: '../assets/cagliari.png',
     city: 'Cagliari',
@@ -24,6 +27,7 @@ export const clubs: Club[] = [
     seasonGoal: 'avoid relegation to Serie B',
   },
   {
+    id: 'emp',
     name: 'Empoli FC',
     logo: '../assets/empoli.png',
     city: 'Empoli',
@@ -31,6 +35,7 @@ export const clubs: Club[] = [
     seasonGoal: 'place in the middle of the table',
   },
   {
+    id: 'fio',
     name: 'ACF Fiorentina',
     logo: '../assets/fiorentina.png',
     city: 'Florence',
@@ -38,6 +43,7 @@ export const clubs: Club[] = [
     seasonGoal: 'qualify for European competitions',
   },
   {
+    id: 'fro',
     name: 'Frosinone Calcio',
     logo: '../assets/frosinone.png',
     city: 'Frosinone',
@@ -45,6 +51,7 @@ export const clubs: Club[] = [
     seasonGoal: 'avoid relegation to Serie B',
   },
   {
+    id: 'gen',
     name: 'Genoa CFC',
     logo: '../assets/genoa.png',
     city: 'Genoa',
@@ -52,6 +59,7 @@ export const clubs: Club[] = [
     seasonGoal: 'avoid relegation to Serie B',
   },
   {
+    id: 'ver',
     name: 'Hellas Verona',
     logo: '../assets/hellas.png',
     city: 'Verona',
@@ -59,6 +67,7 @@ export const clubs: Club[] = [
     seasonGoal: 'place in the middle of the table',
   },
   {
+    id: 'int',
     name: 'FC Internazionale',
     logo: '../assets/inter.png',
     city: 'Milan',
@@ -66,6 +75,7 @@ export const clubs: Club[] = [
     seasonGoal: 'scudetto',
   },
   {
+    id: 'juv',
     name: 'Juventus F.C.',
     logo: '../assets/juventus.png',
     city: 'Turin',
@@ -73,6 +83,7 @@ export const clubs: Club[] = [
     seasonGoal: 'scudetto',
   },
   {
+    id: 'laz',
     name: 'S.S. Lazio',
     logo: '../assets/lazio.png',
     city: 'Rome',
@@ -80,6 +91,7 @@ export const clubs: Club[] = [
     seasonGoal: 'qualify for the Champions League',
   },
   {
+    id: 'lec',
     name: 'US Lecce',
     logo: '../assets/lecce.png',
     city: 'Lecce',
@@ -87,6 +99,7 @@ export const clubs: Club[] = [
     seasonGoal: 'avoid relegation to Serie B',
   },
   {
+    id: 'mil',
     name: 'AC Milan',
     logo: '../assets/milan.png',
     city: 'Milan',
@@ -94,6 +107,7 @@ export const clubs: Club[] = [
     seasonGoal: 'scudetto',
   },
   {
+    id: 'mon',
     name: 'AC Monza',
     logo: '../assets/monza.png',
     city: 'Monza',
@@ -101,6 +115,7 @@ export const clubs: Club[] = [
     seasonGoal: 'place in the middle of the table',
   },
   {
+    id: 'nap',
     name: 'SSC Napoli',
     logo: '../assets/napoli.png',
     city: 'Naples',
@@ -108,6 +123,7 @@ export const clubs: Club[] = [
     seasonGoal: 'qualify for the Champions League',
   },
   {
+    id: 'rom',
     name: 'AS Roma',
     logo: '../assets/roma.png',
     city: 'Rome',
@@ -115,6 +131,7 @@ export const clubs: Club[] = [
     seasonGoal: 'qualify for the Champions League',
   },
   {
+    id: 'sal',
     name: 'US Salernitana 1919',
     logo: '../assets/salernitana.png',
     city: 'Salerno',
@@ -122,6 +139,7 @@ export const clubs: Club[] = [
     seasonGoal: 'avoid relegation to Serie B',
   },
   {
+    id: 'sas',
     name: 'US Sassuolo Calcio',
     logo: '../assets/sassuolo.png',
     city: 'Sassuolo',
@@ -129,6 +147,7 @@ export const clubs: Club[] = [
     seasonGoal: 'place in the middle of the table',
   },
   {
+    id: 'tor',
     name: 'Torino FC',
     logo: '../assets/torino.png',
     city: 'Turin',
@@ -136,6 +155,7 @@ export const clubs: Club[] = [
     seasonGoal: 'place in the middle of the table',
   },
   {
+    id: 'udi',
     name: 'Udinese Calcio',
     logo: '../assets/udinese.png',
     city: 'Udine',

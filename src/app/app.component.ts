@@ -14,7 +14,12 @@ export class AppComponent {
   constructor(private clubsService: ClubService) {}
 
   getClubs(): void {
-    this.clubs = this.clubsService.getClubs();
+    this.clubsService.currentClubs$.subscribe(
+      (clubsList) => (this.clubs = clubsList)
+    );
+    // this.clubsService.getClubs().subscribe((clubList) => {
+    //   this.clubs = clubList;
+    // });
   }
   ngOnInit(): void {
     this.getClubs();
