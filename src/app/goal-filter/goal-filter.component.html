@@ -1,8 +1,15 @@
-<form #goalForm="ngForm">
-    <div class="form-group">
-        <label for="goal">Season goal</label>
-        <select #selectGoal class="form-control" id="goal" (change)="this.clubService.filter(selectGoal.value)">
-            <option *ngFor="let goal of seasonGoals" [value]="goal">{{goal}}</option>
-        </select>
+<form>
+    <div>
+      <label>
+        <input type="radio" name="seasonGoal" value="all" [(ngModel)]="selectedFilter" (ngModelChange)="this.filterClubs()"> All clubs
+      </label>
     </div>
-</form>
+    <div>
+      <label>
+        <input type="radio" name="seasonGoal" [value]="selectedGoal" [(ngModel)]="selectedFilter" (ngModelChange)="this.filterClubs()"> Season goal:
+      </label>
+      <select [(ngModel)]="selectedGoal" name="goal" (ngModelChange)="setFilter($event)">
+        <option *ngFor="let goal of seasonGoals" [value]="goal">{{goal}}</option>
+      </select>
+    </div>
+  </form>

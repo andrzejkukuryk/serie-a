@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SeasonGoal, seasonGoals } from '../../models/seasonGoal';
+import { seasonGoals } from '../../models/seasonGoal';
 import { ClubService } from '../club.service';
 
 @Component({
@@ -10,9 +10,18 @@ import { ClubService } from '../club.service';
 export class GoalFilterComponent {
   constructor(public clubService: ClubService) {}
   seasonGoals = seasonGoals;
-  selectedGoal: SeasonGoal | undefined;
-  handleChange(value: any) {
-    console.log(value);
+  selectedGoal: string = 'scudetto';
+  selectedFilter: string = 'all';
+  setFilter(term: string): void {
+    this.selectedFilter = term;
+    this.filterClubs();
   }
-  // filterByGoal;
+
+  filterClubs(): void {
+    if (this.selectedFilter === 'all') {
+      this.clubService.setAllClubs();
+      return;
+    }
+    this.clubService.filter(this.selectedFilter);
+  }
 }
