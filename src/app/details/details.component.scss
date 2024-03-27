@@ -12,19 +12,16 @@ p,
 }
 
 .label {
-  display: inline-block;
+  display: block;
   width: 200px;
   font-weight: 500;
+  font-size: 24px;
 }
 
-.colors {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
+
   .clubColor {
+    display: inline-block;
     width: 30px;
     height: 30px;
     transform: skew(-30deg);
-  }
 }

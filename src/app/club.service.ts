@@ -3,7 +3,7 @@ import { clubs } from '../data/clubs';
 import { Club } from '../models/club';
 import { SelectedClubService } from './selected-club.service';
 import { Observable, of, BehaviorSubject } from 'rxjs';
-import { SeasonGoal } from '../models/seasonGoal';
+
 
 @Injectable({
   providedIn: 'root',
