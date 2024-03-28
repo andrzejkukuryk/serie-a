@@ -28,6 +28,7 @@
     "@angular/compiler-cli": "^17.2.0",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^20.11.30",
+    "angular-cli-ghpages": "^2.0.0-beta.2",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
     "file-loader": "^6.2.0",
