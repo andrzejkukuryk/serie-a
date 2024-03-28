@@ -2,6 +2,7 @@
 
 form {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     font-family: $font-primary;
@@ -45,4 +46,29 @@ select {
     outline: none;
 }
 
+@media screen and (max-width: $laptop) {
+    form {
+        font-size: 20px;
+    }
+    select {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    form {
+        flex-direction: column;
+        font-size: 16px;
+        margin-top: 32px;
+    }
+    label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    select {
+        font-size: 14px;
+    }
+}
 

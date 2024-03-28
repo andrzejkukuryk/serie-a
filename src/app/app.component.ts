@@ -17,9 +17,6 @@ export class AppComponent {
     this.clubsService.currentClubs$.subscribe(
       (clubsList) => (this.clubs = clubsList)
     );
-    // this.clubsService.getClubs().subscribe((clubList) => {
-    //   this.clubs = clubList;
-    // });
   }
   ngOnInit(): void {
     this.getClubs();

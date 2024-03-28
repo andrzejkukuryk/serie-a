@@ -9,7 +9,7 @@
 h1 {
   @include header;
   font-size: 90px;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 h2 {
   @include header;
@@ -20,10 +20,50 @@ h2 {
   position: relative;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-content: flex-start;
   justify-content: center;
   flex-wrap: wrap;
   gap: 1vw;
 
+  height: 20vw;
+  padding: 2vw 0 0;
   margin: 3vw 1vw;
+}
+
+@media screen and (max-width: $laptop) {
+  h1 {
+    font-size: 72px;
+    margin-bottom: 24px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .clubsContainer {
+    gap: 3vw;
+
+    height: 73vw;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  h1 {
+    font-size: 48px;
+    margin-bottom: 12px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  h1 {
+    font-size: 40px;
+    margin-bottom: 0px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .clubsContainer {
+    height: 92vw;
+  }
 }
