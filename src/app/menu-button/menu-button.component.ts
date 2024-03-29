@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { MenuService } from '../menu.service';
-import { Observable, of } from 'rxjs';
-import { map } from 'rxjs/operators';
-import { ClubService } from '../club.service';
+
 
 @Component({
   selector: 'app-menu-button',
@@ -11,6 +9,8 @@ import { ClubService } from '../club.service';
 })
 export class MenuButtonComponent {
   constructor(private menu: MenuService) {}
+  openMenuIcon: string = '../../assets/openMenu.svg';
+  closeMenuIcon: string = '../../assets/closeMenu.svg';
   isOpen: boolean = false;
 
   openMenu(): void {
