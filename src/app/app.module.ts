@@ -9,6 +9,7 @@ import { DetailsComponent } from './details/details.component';
 import { GoalFilterComponent } from './goal-filter/goal-filter.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { MenuButtonComponent } from './menu-button/menu-button.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FormsModule } from '@angular/forms';
     ClubComponent,
     DetailsComponent,
     GoalFilterComponent,
+    MenuButtonComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, CommonModule, FormsModule],
   providers: [],

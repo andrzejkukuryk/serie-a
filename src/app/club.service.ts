@@ -3,7 +3,7 @@ import { clubs } from '../data/clubs';
 import { Club } from '../models/club';
 import { SelectedClubService } from './selected-club.service';
 import { Observable, of, BehaviorSubject } from 'rxjs';
-
+import { MenuService } from './menu.service';
 
 @Injectable({
   providedIn: 'root',
@@ -23,7 +23,10 @@ export class ClubService {
     const filteredClubs = clubs.filter((club) => club.seasonGoal === term);
     this.currentClubsSubject.next(filteredClubs);
   }
-  constructor(public selectedClub: SelectedClubService) {
+  constructor(
+    public selectedClub: SelectedClubService,
+    public menu: MenuService
+  ) {
     this.setAllClubs();
   }
 }

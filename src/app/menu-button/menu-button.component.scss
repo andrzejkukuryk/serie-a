@@ -1,0 +1,37 @@
+@import "../../../variables.scss";
+
+.buttonContainer {
+    position: absolute;
+    top: 39px;
+    left: 32px;
+    display: none;
+}
+button {
+    background: none;
+    border: none;
+}
+
+@media screen and (max-width: $tablet) {
+    .buttonContainer {
+        display: block;
+
+        .menuIcon {
+            width: 48px;
+            height: 48px;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .buttonContainer {
+        top: 33px;
+        left: 18px;
+
+        .menuIcon {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    
+}
+
