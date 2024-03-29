@@ -29,6 +29,7 @@ export class ClubComponent {
   handleClick(): void {
     if (this.club && !this.clubIsSelected) {
       this.clubService.selectedClub.set(this.club.id);
+      this.clubService.menu.closeMenu();
     }
     if (this.isExpanded) {
       this.showDetails = true;

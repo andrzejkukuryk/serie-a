@@ -9,6 +9,7 @@ import { ClubService } from '../club.service';
 })
 export class GoalFilterComponent {
   constructor(public clubService: ClubService) {}
+  menuIsOpen: boolean = false;
   seasonGoals = seasonGoals;
   selectedGoal: string = 'scudetto';
   selectedFilter: string = 'all';
@@ -23,5 +24,11 @@ export class GoalFilterComponent {
       return;
     }
     this.clubService.filter(this.selectedFilter);
+  }
+
+  ngOnInit() {
+    this.clubService.menu.menuIsOpen$.subscribe(
+      (isOpen) => (this.menuIsOpen = isOpen)
+    );
   }
 }

@@ -1,4 +1,4 @@
-<form>
+<form [ngClass]="{'collapsed': !this.menuIsOpen}">
     Show: 
     <div>
       <label  [ngClass]="{'checked': selectedFilter === 'all'}">
